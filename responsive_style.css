@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* defualt font size is 16 px; */
+    /* 1rem = 16px; */
+    font-size: 62.5%;
+    /* 1rem = 10px; */
+}
+
+body {
+    font-family: Plusjakartadisplay, sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Navbar Components */
+nav {
+    display: flex;
+    width: 87vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    /* border: 2rem solid black; */
+}
+nav #navHeading{
+    cursor: pointer;
+}
+@supports (background-clip: text){
+    nav #navHeading span{
+        background: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+        background-clip: text;
+        color: transparent;
+    }
+}
+nav #navUl {
+    display: flex;
+    list-style: none;
+}
+
+nav .navLi {
+    margin: 0rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+nav .navLi:hover {
+    opacity: 0.5;
+}
+nav #navUl #navbtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* transition: transform 0s; */
+}
+nav #navUl #navbtn #bookCall {
+    margin-right: .7rem;
+}
+
+nav #navUl #navbtn #bookCall:hover {
+    opacity: 1;
+}
+
+nav #navUl #navbtn #callArrow{
+    transition: transform .3s;
+}
+nav #navUl #navbtn:hover #callArrow{
+    transform: translate(1.2rem, 0);
+}
+
+/* Main Components */
+.mainContainer {
+    /* border: 2rem solid black; */
+    width: 87vw;
+    margin: 6.5rem auto;
+    margin-top: 7.5rem;
+    /* padding: 20rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainContainer #aboutMe {
+    /* border: 2rem solid black; */
+    /* height: 600rem; */
+    width: 50%;
+}
+.mainContainer #aboutMe .mainHeading{
+    font-size: 7.2rem;
+    /* border: 2rem solid black; */
+}
+@supports (background-clip: text){
+    .mainContainer #aboutMe .mainHeading span{
+        background: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+        background-clip: text;
+        color: transparent;
+    }
+}
+.mainContainer #aboutMe #mainPara {
+    /* border: 2rem solid black; */
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    opacity: 0.5;
+}
+.mainContainer #aboutMe .subContainer{
+    display: flex;
+    align-items: center;
+    /* border: .2rem solid black; */
+}
+.mainContainer #aboutMe .subContainer #mainbtn {
+    /* border: 2rem solid black; */
+    cursor: pointer;
+    border: none;
+    width: 13.7rem;
+    height: 5.6rem;
+    background: black;
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    transition: transform .5s;
+}
+.mainContainer #aboutMe .subContainer #mainbtn:hover{
+    transform: translate(.8rem, .8rem);
+}
+.mainContainer #aboutMe .subContainer .gradientshadow{
+    width: 13.7rem;
+    height: 5.6rem;
+    background: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    position: relative;
+    top: .8rem;
+    right: 12.9rem;
+    z-index: -1;
+}
+.mainContainer #aboutMe .subContainer #downloadCV {
+    /* border: .2rem solid black; */
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    right: 10rem;
+}
+.mainContainer #aboutMe .subContainer #downloadCV #cvArrow{
+    margin-left: .7rem;
+    display: inline-block; 
+    /* transition was not working so used inline-block to make it work*/
+    transition: transform .3s;
+}
+.mainContainer #aboutMe .subContainer #downloadCV:hover #cvArrow{
+    transform: translate(1.5rem, 0);
+}
+.mainContainer #heroImg {
+    background-image: url(/Img/60ad1c2b0e1d633fc7ef2e69_Group\ 160-min-p-1080.jpeg);
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 60rem;
+    width: 50rem;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    /* border: 2rem solid black; */
+    margin: 1rem 0rem;
+}
+
+/* Trusted By Components */
+.trustedby{
+    /* width: 87vw; */
+    margin: auto;
+    text-align: center;
+    padding: 5rem 15rem;
+}
+.trustedby .subPara{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.trustedby .trustedBrand{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trustedby .trustedBrand .brandImg{
+    margin: 3rem 3rem;
+}
+.trustedby .trustedBrand .brandImg img{
+    width: 16rem;
+}
