@@ -205,7 +205,7 @@ nav #navUl #navbtn:hover #callArrow {
 }
 
 .mainContainer #heroImg {
-  background-image: url(/Img/heroImg.jpeg);
+  background-image: url(/Portfollio_Creator/Img/hero.jpeg);
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
